@@ -1,13 +1,14 @@
 // components/SupplyChainSolutions.jsx
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect , useState} from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Image from "next/image";
 
 const SupplyChainSolutions = () => {
   const sectionRef = useRef(null);
   const controls = useAnimation();
+  const [particles, setParticles] = useState([]);
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 });
 
   useEffect(() => {
@@ -27,6 +28,19 @@ const SupplyChainSolutions = () => {
       },
     },
   };
+
+  useEffect(() => {
+  const generatedParticles = [...Array(20)].map(() => ({
+    x: Math.random() * window.innerWidth,
+    y: Math.random() * window.innerHeight,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    duration: 3 + Math.random() * 2,
+    delay: Math.random() * 5,
+  }));
+
+  setParticles(generatedParticles);
+}, []);
 
   const contentVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -120,32 +134,32 @@ const SupplyChainSolutions = () => {
 
       {/* Animated Background Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              opacity: 0,
-            }}
-            animate={{
-              y: [null, -100, -200],
-              opacity: [0, 0.5, 0],
-              scale: [0, 1, 0],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 5,
-              ease: "linear",
-            }}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          />
-        ))}
+       {particles.map((p, i) => (
+  <motion.div
+    key={i}
+    className="absolute w-1 h-1 bg-white/20 rounded-full"
+    initial={{
+      x: p.x,
+      y: p.y,
+      opacity: 0,
+    }}
+    animate={{
+      y: [p.y, p.y - 100, p.y - 200],
+      opacity: [0, 0.5, 0],
+      scale: [0, 1, 0],
+    }}
+    transition={{
+      duration: p.duration,
+      repeat: Infinity,
+      delay: p.delay,
+      ease: "linear",
+    }}
+    style={{
+      left: `${p.left}%`,
+      top: `${p.top}%`,
+    }}
+  />
+))}
       </div>
 
       {/* Content Container */}
