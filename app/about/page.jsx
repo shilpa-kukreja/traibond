@@ -272,11 +272,11 @@ export default function AboutPage() {
 
           <div className="w-20 h-1 bg-[#143e69] mx-auto mt-4 mb-6 rounded-full" />
 
-          <p className="mt-4 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-4 text-lg text-justify text-gray-600 leading-relaxed">
             Established in 2018, Tribond Worldwide Logistics Pvt Ltd is a fast-growing, performance-driven freight forwarding company headquartered in Delhi, strategically positioned to serve global trade through India’s key logistics hub.
           </p>
 
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-justify text-gray-600">
             Under the dynamic leadership of Pradeesh P. Nair and Padmakumaran Nair, the company has built a reputation for speed, reliability, and execution excellence. With deep-rooted industry expertise and hands-on operational control, our leadership ensures that every shipment is handled with precision, accountability, and urgency.
           </p>
         </section>
