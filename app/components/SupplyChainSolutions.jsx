@@ -4,6 +4,7 @@
 import { useRef, useEffect , useState} from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const SupplyChainSolutions = () => {
   const sectionRef = useRef(null);
@@ -225,7 +226,7 @@ const SupplyChainSolutions = () => {
           </motion.div>
 
           {/* CTA Button with Stats */}
-          <motion.div
+      <Link href="/contact"><motion.div
             variants={contentVariants}
             className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pt-4"
           >
@@ -259,6 +260,7 @@ const SupplyChainSolutions = () => {
                 />
               </motion.svg>
             </motion.button>
+            
 
             {/* Trust Badge */}
             {/* <motion.div
@@ -280,7 +282,7 @@ const SupplyChainSolutions = () => {
               </div>
             </motion.div> */}
           </motion.div>
-
+</Link> 
           {/* Floating Stats Cards */}
           {/* <motion.div
             variants={floatingElementsVariants}
@@ -326,6 +328,7 @@ const SupplyChainSolutions = () => {
             ))}
           </motion.div> */}
         </motion.div>
+        
       </div>
 
      

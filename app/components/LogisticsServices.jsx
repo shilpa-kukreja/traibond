@@ -23,6 +23,7 @@ const LogisticsServices = () => {
     {
       id: 1,
       title: "Ocean Freight",
+      slug: "ocean-freight",
       image: "/offer/oceanfrieght.jpg", // Replace with your actual image path
       description:
         "End-to-end ocean freight solutions supported by a strong global network. Reliable movement of cargo with efficient planning and cost-effective shipping options tailored to your business needs.",
@@ -35,6 +36,7 @@ const LogisticsServices = () => {
     {
       id: 2,
       title: "Air Freight",
+      slug: "air-freight",
       image: "/offer/airfrieght.jpg", // Replace with your actual image path
       description:
         "Time-sensitive air freight services designed for speed and reliability. Ensuring prompt delivery with efficient coordination for urgent and high-priority shipments across destinations.",
@@ -47,6 +49,7 @@ const LogisticsServices = () => {
     {
       id: 3,
       title: "Project Cargo",
+      slug: "project-cargo",
       image: "/offer/projectcargo.jpg", // Replace with your actual image path
       description:
         "Specialized logistics solutions for complex and heavy cargo movements. Careful planning, route management, and expert handling for oversized and critical shipments.",
@@ -59,6 +62,7 @@ const LogisticsServices = () => {
     {
       id: 4,
       title: "Customs Clearing",
+      slug: "custom-clearing",
       image: "/offer/customerclearing.jpg", // Replace with your actual image path
       description:
         "Efficient customs clearance with proper documentation and compliance support. Smooth handling of import and export processes to avoid delays and ensure seamless operations.",
@@ -71,6 +75,7 @@ const LogisticsServices = () => {
     {
       id: 5,
       title: "Warehousing",
+      slug: "warehousing",
       image: "/offer/warehousing.jpg", // Replace with your actual image path
       description:
         "Secure and flexible warehousing solutions for storage and distribution. Efficient inventory handling designed to support smooth and organized supply chain operations.",
@@ -83,6 +88,7 @@ const LogisticsServices = () => {
     {
       id: 6,
       title: "Dangerous Goods",
+      slug: "dangerous-cargo",
       image: "/offer/dangerousgoods.jpg", // Replace with your actual image path
       description:
         "Safe and compliant handling of hazardous cargo with strict safety measures. Reliable transportation ensuring proper care and adherence to all required regulations.",
@@ -303,7 +309,7 @@ const LogisticsServices = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <ServicesGrid services={services} isVisible={isVisible} />
+              <ServicesGrid services={services} isVisible={isVisible}  />
             </motion.div>
           )}
         </AnimatePresence>

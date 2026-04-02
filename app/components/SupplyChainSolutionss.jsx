@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const SupplyChainSolutions = () => {
   const sectionRef = useRef(null);
@@ -76,7 +77,7 @@ const SupplyChainSolutions = () => {
           </p>
 
           {/* CTA Section */}
-          <div className="flex flex-wrap items-center gap-4">
+       <Link href="/contact">   <div className="flex flex-wrap items-center gap-4">
             {/* Primary CTA */}
             <motion.button
               whileHover={{ scale: 1.06 }}
@@ -90,7 +91,7 @@ const SupplyChainSolutions = () => {
             </motion.button>
 
        
-          </div>
+          </div></Link>
 
         </motion.div>
       </div>

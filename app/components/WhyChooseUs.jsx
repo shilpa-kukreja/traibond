@@ -80,22 +80,22 @@ export default function WhyChooseUs() {
 
           <div>
             <p className="text-sm tracking-widest text-white uppercase">
-              PROVEN OPERATIONS
+              Total Year of Experience
             </p>
             <h3 className="text-5xl font-bold text-white mt-2">
-              <Counter end={80} suffix="%" />
+              <Counter end={10} suffix="+" />
             </h3>
             <p className="text-white mt-2">
-              Successful project completion rate
+              years of industry expertise
             </p>
           </div>
 
           <div>
             <p className="text-sm tracking-widest text-white uppercase">
-              Trusted By
+              Group partners
             </p>
             <h3 className="text-5xl font-bold text-white mt-2">
-              <Counter end={38} suffix="K+" />
+              <Counter end={10000} suffix="+" />
             </h3>
             <p className="text-white mt-2">
               satisfied clients worldwide
@@ -104,25 +104,25 @@ export default function WhyChooseUs() {
 
           <div>
             <p className="text-sm tracking-widest text-white uppercase">
-              Data Driven
+              Major client
             </p>
             <h3 className="text-5xl font-bold text-white mt-2">
-              <Counter end={70} suffix="B" />
+              <Counter end={300} suffix="+" />
             </h3>
             <p className="text-white mt-2">
-              data points processed annually
+              global industry leaders
             </p>
           </div>
 
           <div>
             <p className="text-sm tracking-widest text-white uppercase">
-              Used By
+              Successful dispatches
             </p>
             <h3 className="text-5xl font-bold text-white mt-2">
-              <Counter end={12} suffix="M+" />
+              <Counter end={25000} suffix="+" />
             </h3>
             <p className="text-white mt-2">
-              active users across platforms
+              shipments delivered worldwide
             </p>
           </div>
 

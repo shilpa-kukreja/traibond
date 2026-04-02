@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import {motion} from "framer-motion"
+import Link from "next/link"
 
 export default function AboutSection() {
   return (
@@ -53,11 +54,12 @@ export default function AboutSection() {
           </p>
 
           {/* Button */}
-         <button className="mt-6 relative overflow-hidden bg-[#e07409] text-white px-6 py-3 rounded-lg">
+       <Link href="/about" ><button className="mt-6 relative overflow-hidden bg-[#e07409] text-white px-6 py-3 rounded-lg">
             <span className="relative z-10">Learn More</span>
             {/* Permanent Shine */}
             <span className="absolute inset-0 animate-[shine_3s_linear_infinite] bg-gradient-to-r from-transparent via-white/40 to-transparent"></span>
           </button>
+        </Link>
 
           {/* Stats */}
           <div className="flex gap-10 mt-12">

@@ -3,10 +3,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ServiceCard = ({
   title,
   image,
+  slug,
   description,
   gradientFrom,
   gradientTo,
@@ -14,6 +16,7 @@ const ServiceCard = ({
   borderColor,
   hoverGlow,
 }) => {
+  const router = useRouter();
   return (
     <motion.div
       className={`group relative h-full rounded-xl border-b-8 bg-gradient-to-br ${gradientFrom} ${gradientTo} backdrop-blur-sm border ${borderColor} overflow-hidden cursor-pointer`}
@@ -54,10 +57,10 @@ const ServiceCard = ({
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </motion.div>
-        
+
         {/* Gradient Overlay */}
         <div className={`absolute inset-0 bg-gradient-to-t ${imageOverlay} group-hover:opacity-75 transition-opacity duration-300`} />
-        
+
         {/* Title Overlay for Mobile/Tablet */}
         <motion.div
           className="absolute bottom-0 left-0 right-0 p-6 md:hidden"
@@ -93,8 +96,31 @@ const ServiceCard = ({
       </div>
 
       {/* Optional: Learn more link that appears on hover */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        initial={{ x: 10 }}
+        whileHover={{ x: 0 }}
+      >
+        <span className="text-xs font-semibold text-[#1b3163] tracking-wider uppercase flex items-center gap-1 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
+          Learn More
+          <svg
+            className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </span>
+      </motion.div> */}
+      <motion.div
+        onClick={() => router.push(`/services/${slug}`)}
+        className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
         initial={{ x: 10 }}
         whileHover={{ x: 0 }}
       >
