@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 export default function Hero() {
   const [slides, setSlides] = useState([]);
 
-  const API = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/sliders`;
+  const API = "https://tribond.in/api/sliders";
 
   useEffect(() => {
     fetchSlides();
