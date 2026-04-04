@@ -228,7 +228,7 @@ export default function AboutPage() {
       <main className="bg-white text-gray-700 overflow-hidden">
 
         {/* 🔥 HERO */}
-        <section className="relative h-[80vh] w-full">
+        <section className="relative h-[80vh]  w-full">
           <Image
             src="/offer/Aboutus.jpg"
             alt="Tribond Logistics"
