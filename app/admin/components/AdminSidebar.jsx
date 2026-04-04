@@ -74,7 +74,7 @@ export default function AdminSidebar() {
 
           {!collapsed && (
             <Image
-              src="/logo.gif"
+              src="/offer/logo2.jpg"
               width={140}
               height={60}
               alt="logo"
