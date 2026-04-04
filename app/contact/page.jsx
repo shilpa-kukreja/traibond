@@ -167,13 +167,14 @@ export default function ContactPage() {
 
             {/* Google Map */}
             <div className="rounded-xl overflow-hidden shadow">
-
               <iframe
-                className="w-full h-125"
-                src="https://www.google.com/maps?q=Indore&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.9674900434115!2d77.0269970750072!3d28.600752085523997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dd61eb460af%3A0xe89377d97456bc5e!2sVegas%20Mall!5e0!3m2!1sen!2sin!4v1775297138586!5m2!1sen!2sin"
+                className="w-full h-[550px]"
+                style={{ border: 0 }}
+                allowFullScreen
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-
             </div>
 
           </div>

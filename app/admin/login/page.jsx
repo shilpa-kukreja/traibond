@@ -73,7 +73,7 @@ export default function AdminLogin() {
             <div className="flex justify-center mb-10">
               <Link href="/" className="text-2xl font-semibold text-gray-800">
                 <Image
-                  src="/logo.gif"
+                  src="/offer/logo2.jpg"
                   alt="logo"
                   width={220}
                   height={90}
@@ -172,7 +172,7 @@ export default function AdminLogin() {
             </form>
 
             <div className="mt-10 pt-6 border-t border-gray-100 text-center text-sm text-gray-500">
-              <p>© {new Date().getFullYear()} EricSolutions. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Tribond. All rights reserved.</p>
             </div>
           </div>
         </div>
