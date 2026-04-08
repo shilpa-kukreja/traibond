@@ -563,7 +563,7 @@ export default function Footer() {
         </div>
 
         {/* COPYRIGHT */}
-      <div className=" border-gray-700 py-6 text-center text-black text-sm">
+      <div className=" border-gray-700 py-6 text-center text-white text-sm">
           © {new Date().getFullYear()} Tribond. All Rights Reserved.
         </div>
 
