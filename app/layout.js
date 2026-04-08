@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Trabond - Your Trusted Logistics Partner",
+  title: "Tribond - Your Trusted Logistics Partner",
   description: "Experience seamless logistics solutions with Tribond. We offer reliable transportation, warehousing, and supply chain management services tailored to your business needs. Partner with us for efficient and cost-effective logistics that drive your success.",
 };
 
