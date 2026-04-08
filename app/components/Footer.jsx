@@ -585,7 +585,7 @@ export default function Footer() {
 
           {/* WHATSAPP BUTTON */}
           <a
-            href="https://wa.me/+918799705756?text=Hello%20Insight%20Integrators,%20I%20would%20like%20to%20discuss%20compliance%20advisory."
+            href="https://wa.me/+918799705756?text=Hello%20Tribond,%20I%20am%20interested%20in%20your%20services,%20please%20contact%20me."
             aria-label="WhatsApp"
             target="_blank"
             rel="noopener noreferrer"

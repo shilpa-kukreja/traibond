@@ -96,7 +96,7 @@ export default function ContactPage() {
               <Phone className="w-10 h-10 text-[#2167ad] mx-auto mb-3" />
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
               <p className="text-gray-600">
-                (+1) +91 8799705756
+               +91 8799705756
               </p>
             </div>
 
